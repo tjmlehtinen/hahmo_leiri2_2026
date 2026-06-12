@@ -21,4 +21,15 @@ public class PartSelector : MonoBehaviour
         currentIndex = (currentIndex + 1) % parts.Length;
         partRenderer.sprite = parts[currentIndex];
     }
+
+    public int GetIndex()
+    {
+        return currentIndex;
+    }
+
+    public void SetIndex(int i)
+    {
+        currentIndex = i;
+        partRenderer.sprite = parts[currentIndex];
+    }
 }
